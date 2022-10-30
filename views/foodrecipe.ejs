@@ -9,7 +9,8 @@
         }
         
         .column {
-          color:yellow;
+          font-size: large;
+          color:rgb(6, 85, 70);
           float: left;
           width: 33.33%;
           padding: 5px;
@@ -22,10 +23,10 @@
         }
     </style>
 </head>
-<body style="background-color:black">
+<body style="background-color:rgb(189, 242, 240)">
     <form action ="food" method="GET">
-    <button type="submit" style="background-color:aqua; float: right;">SEARCH ANOTHER</button>
-    <h3 style="color:yellow"><i>Recipes related to <%= q %></i></h3>
+    <button type="submit" style="background-color:rgb(237, 157, 157); float: right; padding: 15px 32px;">SEARCH ANOTHER</button>
+    <h1 style="color:rgb(73, 16, 135);"><i>Recipes related to <%= q %> :</i></h1>
     
     <div class="row">
         <div class="column">
@@ -63,7 +64,25 @@
 
         </div> 
     </div>
-    <p style="background-color:aqua;">click on the image to get the recipe.</p>
+    <div class="row">
+        <div class="column">
+            <a href="https://www.google.co.in/search?q=<%= title6 %>&sxsrf=ALiCzsaIRn2ZovWlo9MelyPqsrARGxge1w%3A1667138534352&ei=5oNeY5qOFc_14-EP3dC40AE&ved=0ahUKEwiamYaBj4j7AhXP-jgGHV0oDhoQ4dUDCA8&uact=5&oq=cake&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCAAQsQMQQzIFCAAQkQIyCAguELEDEJECMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgUIABCABDINCAAQgAQQhwIQsQMQFDINCAAQgAQQhwIQyQMQFDoHCCMQ6gIQJzoECCMQJzoFCC4QkQI6CwgAEIAEELEDEIMBOgoIABCxAxCDARBDSgQIQRgASgQIRhgAUABYvQpgtBdoAXAAeACAAfgBiAGQBZIBBTAuMy4xmAEAoAEBsAEKwAEB&sclient=gws-wiz-serp">
+          <img src= <%= img6 %> style="width:100%"></a>
+          <b>Title:</b> <%= title6 %> <br><br>
+        </div>
+        <div class="column">
+            <a href="https://www.google.co.in/search?q=<%= title7 %>&sxsrf=ALiCzsaIRn2ZovWlo9MelyPqsrARGxge1w%3A1667138534352&ei=5oNeY5qOFc_14-EP3dC40AE&ved=0ahUKEwiamYaBj4j7AhXP-jgGHV0oDhoQ4dUDCA8&uact=5&oq=cake&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCAAQsQMQQzIFCAAQkQIyCAguELEDEJECMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgUIABCABDINCAAQgAQQhwIQsQMQFDINCAAQgAQQhwIQyQMQFDoHCCMQ6gIQJzoECCMQJzoFCC4QkQI6CwgAEIAEELEDEIMBOgoIABCxAxCDARBDSgQIQRgASgQIRhgAUABYvQpgtBdoAXAAeACAAfgBiAGQBZIBBTAuMy4xmAEAoAEBsAEKwAEB&sclient=gws-wiz-serp">
+          <img src= <%= img7 %>  style="width:100%"></a>
+          <b>Title:</b> <%= title7 %> <br><br>
+        </div> 
+        <div class="column">
+          <a href="https://www.google.co.in/search?q=<%= title8 %>&sxsrf=ALiCzsaIRn2ZovWlo9MelyPqsrARGxge1w%3A1667138534352&ei=5oNeY5qOFc_14-EP3dC40AE&ved=0ahUKEwiamYaBj4j7AhXP-jgGHV0oDhoQ4dUDCA8&uact=5&oq=cake&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCAAQsQMQQzIFCAAQkQIyCAguELEDEJECMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgUIABCABDINCAAQgAQQhwIQsQMQFDINCAAQgAQQhwIQyQMQFDoHCCMQ6gIQJzoECCMQJzoFCC4QkQI6CwgAEIAEELEDEIMBOgoIABCxAxCDARBDSgQIQRgASgQIRhgAUABYvQpgtBdoAXAAeACAAfgBiAGQBZIBBTAuMy4xmAEAoAEBsAEKwAEB&sclient=gws-wiz-serp">
+          <img src= <%= img8 %>  style="width:100%"></a>
+          <b>Title:</b> <%= title8 %> 
+
+        </div> 
+    </div>
+    <h3 style="background-color:aqua; ">click on the image to get the recipe.</h3>
     </form>
 
             
