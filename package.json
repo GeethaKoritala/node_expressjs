@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "build": "ng build --prod --base-href /dist/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "@stdlib/math-base-special-cos": "^0.0.6",
     "axios": "^0.27.2",
@@ -9,5 +14,8 @@
     "node-telegram-bot-api": "^0.59.0",
     "nodemon": "^2.0.20",
     "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
